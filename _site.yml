@@ -8,6 +8,7 @@ author :
   feedburner : feedname
 
 navigation :
+  - index.html
   - archive.html
   - tags.html
   - categories.html
