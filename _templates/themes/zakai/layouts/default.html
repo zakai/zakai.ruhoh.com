@@ -1,0 +1,48 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  {{# page.description }}
+    <meta name="description" content="{{ . }}">
+  {{/ page.description }}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <link href="{{ paths.theme }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ paths.theme }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ paths.theme }}/css/highlight.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ paths.theme }}/css/sext.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+  </head>
+
+  <body>
+
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>{{ site.title }}</h1>
+        </header>
+        <nav>
+          {{# site.navigation?to_pages }}
+            {{> pages_list }}
+          {{/ site.navigation?to_pages }}
+        </nav>
+        <article class="content">
+        <section class="post">
+          {{ content }}
+        </article>
+        </section>
+      </div>
+      <footer>
+        <p>&copy; {{ site.author.name }} 2012 
+          with help from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+    </div>
+    {{{ syntax }}}
+    {{{ analytics }}}
+  </body>
+</html>

@@ -1,7 +1,7 @@
 ---
 RuhohSpec: '0.1'
 
-theme : twitter
+theme : zakai
 permalink: /:categories/:title
 
 production_url : http://zakai.me
