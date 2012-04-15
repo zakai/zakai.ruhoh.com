@@ -4,7 +4,7 @@ RuhohSpec: '0.1'
 theme : twitter
 permalink: /:categories/:title
 
-production_url : http://sample.com
+production_url : http://zakai.me
 
 comments :
   provider : disqus
